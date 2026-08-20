@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#121216"/>
+  
+  <!-- Speed ramp velocity curve layout -->
+  <!-- Axis Grid lines -->
+  <line x1="100" y1="50" x2="100" y2="380" stroke="#1d1d24" stroke-width="1.5"/>
+  <line x1="100" y1="380" x2="700" y2="380" stroke="#1d1d24" stroke-width="1.5"/>
+  <line x1="100" y1="215" x2="700" y2="215" stroke="#1d1d24" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
+  
+  <!-- Velocity Curves -->
+  <path d="M 100 380 Q 250 380 300 215 T 450 50 Q 550 50 700 380" fill="none" stroke="#34d399" stroke-width="3"/>
+  
+  <!-- Keyframe dots -->
+  <circle cx="300" cy="215" r="6" fill="#34d399"/>
+  <circle cx="450" cy="50" r="6" fill="#34d399"/>
+  
+  <!-- Tangent handles -->
+  <line x1="260" y1="215" x2="340" y2="215" stroke="#34d399" stroke-width="1"/>
+  <circle cx="260" cy="215" r="3" fill="#ffffff"/>
+  <circle cx="340" cy="215" r="3" fill="#ffffff"/>
+  
+  <!-- Text metadata -->
+  <text x="120" y="80" fill="#34d399" font-family="monospace" font-size="12">SPEED RAMP 800 PERCENT</text>
+  <text x="560" y="350" fill="#34d399" font-family="monospace" font-size="12">VELOCITY MAP</text>
+</svg>

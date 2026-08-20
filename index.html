@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dakshata Bhole — Video editor specialising in cinematic storytelling, fan made edits, FMV, and short form content.">
+  <title>Dakshata Bhole — Video Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient-mesh"></div>
+    <div class="ambient-beam"></div>
+    <div class="ambient-fog"></div>
+    <div class="ambient-orb ambient-orb--1"></div>
+    <div class="ambient-orb ambient-orb--2"></div>
+    <div class="ambient-orb ambient-orb--3"></div>
+    <canvas id="particles"></canvas>
+  </div>
+
+  <div id="veil" class="veil"></div>
+  <div id="curDot" class="cur-dot"></div>
+
+  <!-- ── Navigation ── -->
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav-wordmark">DB</a>
+    <nav>
+      <ul class="nav-items">
+        <li><a href="#cinematic" class="nav-link">Work</a></li>
+        <li><a href="#skills"  class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-bg-rays"></div>
+      <div class="hero-bg-leak hero-bg-leak--one"></div>
+      <div class="hero-bg-leak hero-bg-leak--two"></div>
+      <div class="hero-bg-montage">
+        <img src="file:///E:/porto/FMV/Jake-Sully.jfif" alt="">
+        <img src="file:///E:/porto/Cinematic/01221.jpeg" alt="">
+        <img src="file:///E:/porto/Short%20Form%20Content/0613%20(1).jpeg" alt="">
+        <img src="file:///E:/porto/Fan%20Made/1000113885.jfif" alt="">
+      </div>
+      <div class="hero-bg-timecodes">
+        <span>00:14:22:08</span>
+        <span>01:02:47:19</span>
+        <span>00:38:05:03</span>
+      </div>
+    </div>
+    <div class="hero-light" aria-hidden="true"></div>
+    <div class="hero-scanline" aria-hidden="true"></div>
+    <div class="hero-scanline" aria-hidden="true"></div>
+
+    <!-- Two-column layout -->
+    <div class="hero-layout">
+
+      <!-- LEFT — identity & copy -->
+      <div class="hero-left">
+
+        <div class="hero-name-block">
+          <span class="hero-name-top">DAKSHATA</span>
+          <span class="hero-name-bot">BHOLE</span>
+        </div>
+
+        <figure class="hero-quote">
+          <blockquote>"The only safe thing is to take a chance."</blockquote>
+          <figcaption>&mdash; Mike Nichols</figcaption>
+        </figure>
+
+        <a href="#cinematic" class="hero-cta">Explore Work &darr;</a>
+
+      </div>
+
+      <!-- RIGHT — featured video -->
+      <div class="hero-right">
+        <div class="hero-video-frame">
+          <video
+            id="heroVideo"
+            class="hero-video"
+            src="file:///E:/porto/Cinematic/InShot-20260202-182701060.mp4"
+            poster="file:///E:/porto/Cinematic/InShot-20260202-182701060.jpeg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          ></video>
+          <!-- Hover play indicator -->
+          <div class="hero-video-overlay" aria-hidden="true">
+            <div class="hero-video-play">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M6 4L14 9L6 14V4Z" fill="currentColor"/>
+              </svg>
+            </div>
+          </div>
+          <!-- Edge reflections -->
+          <div class="hero-video-glare" aria-hidden="true"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-track"><div class="scroll-bar"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── Showcase Rows ── -->
+  <main class="showcases" id="work">
+
+    <section class="showcase r" id="cinematic">
+      <div class="showcase-head">
+        <h2 class="showcase-title">Cinematic</h2>
+        <div class="showcase-nav">
+          <button class="rail-btn rail-btn--prev" data-target="cinematic" aria-label="Scroll cinematic left">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="rail-btn rail-btn--next" data-target="cinematic" aria-label="Scroll cinematic right">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="rail-outer">
+        <div class="rail-track" data-rail="cinematic"></div>
+      </div>
+    </section>
+
+    <section class="showcase r" id="fanmade">
+      <div class="showcase-head">
+        <h2 class="showcase-title">Fanmade</h2>
+        <div class="showcase-nav">
+          <button class="rail-btn rail-btn--prev" data-target="fanmade" aria-label="Scroll fan made left">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="rail-btn rail-btn--next" data-target="fanmade" aria-label="Scroll fan made right">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="rail-outer">
+        <div class="rail-track" data-rail="fanmade"></div>
+      </div>
+    </section>
+
+    <section class="showcase r" id="shortform">
+      <div class="showcase-head">
+        <h2 class="showcase-title">Short Form</h2>
+        <div class="showcase-nav">
+          <button class="rail-btn rail-btn--prev" data-target="shortform" aria-label="Scroll short form left">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="rail-btn rail-btn--next" data-target="shortform" aria-label="Scroll short form right">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="rail-outer">
+        <div class="rail-track" data-rail="shortform"></div>
+      </div>
+    </section>
+
+    <section class="showcase r" id="fmv">
+      <div class="showcase-head">
+        <h2 class="showcase-title">FMV</h2>
+        <div class="showcase-nav">
+          <button class="rail-btn rail-btn--prev" data-target="fmv" aria-label="Scroll FMV left">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="rail-btn rail-btn--next" data-target="fmv" aria-label="Scroll FMV right">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="rail-outer">
+        <div class="rail-track" data-rail="fmv"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Skills ── -->
+  <section class="skills-section" id="skills">
+    <div class="skills-header r">
+      <p class="sec-label">Toolbox</p>
+      <h2 class="sec-title" data-d="1">Skills &amp; Software</h2>
+    </div>
+    <div class="skills-row">
+
+      <!-- Adobe Premiere Pro -->
+      <div class="skill-item r" aria-label="Adobe Premiere Pro">
+        <div class="skill-item-icon skill-icon--no-color" aria-hidden="true">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="8" fill="#2A0145"/>
+            <text x="24" y="31" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#E0A0FF" text-anchor="middle" letter-spacing="-1">Pr</text>
+          </svg>
+        </div>
+        <span class="skill-item-label">Premiere Pro</span>
+      </div>
+
+      <!-- Adobe After Effects -->
+      <div class="skill-item r" data-d="1" aria-label="Adobe After Effects">
+        <div class="skill-item-icon skill-icon--no-color" aria-hidden="true">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="8" fill="#1A003D"/>
+            <text x="24" y="31" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#9B9BFF" text-anchor="middle" letter-spacing="-1">Ae</text>
+          </svg>
+        </div>
+        <span class="skill-item-label">After Effects</span>
+      </div>
+
+      <!-- DaVinci Resolve -->
+      <div class="skill-item r" data-d="2" aria-label="DaVinci Resolve">
+        <div class="skill-item-icon skill-icon--img" aria-hidden="true">
+          <img src="images/icons/davinci_resolve.png" alt="DaVinci Resolve">
+        </div>
+        <span class="skill-item-label">DaVinci Resolve</span>
+      </div>
+
+      <!-- CapCut -->
+      <div class="skill-item r" data-d="3" aria-label="CapCut">
+        <div class="skill-item-icon skill-icon--img" aria-hidden="true">
+          <img src="images/icons/capcut.jpg" alt="CapCut">
+        </div>
+        <span class="skill-item-label">CapCut</span>
+      </div>
+
+      <!-- Alight Motion -->
+      <div class="skill-item r" data-d="4" aria-label="Alight Motion">
+        <div class="skill-item-icon skill-icon--img" aria-hidden="true">
+          <img src="images/icons/alight_motion.jpg" alt="Alight Motion">
+        </div>
+        <span class="skill-item-label">Alight Motion</span>
+      </div>
+
+      <!-- InShot -->
+      <div class="skill-item r" data-d="5" aria-label="InShot">
+        <div class="skill-item-icon skill-icon--img" aria-hidden="true">
+          <img src="images/icons/inshot.jpg" alt="InShot">
+        </div>
+        <span class="skill-item-label">InShot</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ── Contact ── -->
+  <section class="contact-section" id="contact">
+    <div>
+      <p class="sec-label r">Get In Touch</p>
+      <h2 class="contact-headline r" data-d="1">
+        Let us create<br>something together.
+      </h2>
+      <a href="mailto:dakshata.bhole27@gmail.com" class="contact-email r" data-d="2">
+        dakshata.bhole27@gmail.com
+      </a>
+    </div>
+
+    <div class="r" data-d="1">
+      <form id="contactForm" class="form-group" novalidate>
+        <div class="form-field">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-field">
+          <label for="femail">Email</label>
+          <input type="email" id="femail" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-field">
+          <label for="fmsg">Message</label>
+          <textarea id="fmsg" name="message" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="form-btn">
+          Send Message
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+      <div id="formSuccess" style="display:none; padding: 2rem 0; color: var(--txt-2); font-family: var(--f-mono); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;">
+        Message received. I will be in touch.
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <p class="footer-copy">&copy; 2026 Dakshata Bhole. All rights reserved.</p>
+    <span class="footer-mark">DB</span>
+  </footer>
+
+  <!-- Fullscreen player -->
+  <div class="modal" id="modal">
+    <div class="modal-scrim"></div>
+    <div class="modal-box">
+      <div class="modal-toolbar">
+        <button class="modal-close-btn" id="modalClose" aria-label="Close">Close</button>
+      </div>
+      <video class="modal-video" id="modalVid" controls playsinline preload="none"></video>
+    </div>
+  </div>
+
+  <script src="edits-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

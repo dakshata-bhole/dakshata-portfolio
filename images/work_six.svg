@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#121216"/>
+  
+  <!-- Drone aerial telemetry view -->
+  <!-- Horizon center line -->
+  <line x1="100" y1="225" x2="700" y2="225" stroke="#34d399" stroke-width="1.5" opacity="0.6"/>
+  <line x1="400" y1="100" x2="400" y2="350" stroke="#34d399" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Altitude scale at right -->
+  <line x1="720" y1="100" x2="720" y2="350" stroke="#34d399" stroke-width="1.5"/>
+  <line x1="710" y1="150" x2="720" y2="150" stroke="#34d399" stroke-width="1.5"/>
+  <line x1="700" y1="200" x2="720" y2="200" stroke="#34d399" stroke-width="1.5"/>
+  <line x1="710" y1="250" x2="720" y2="250" stroke="#34d399" stroke-width="1.5"/>
+  <line x1="700" y1="300" x2="720" y2="300" stroke="#34d399" stroke-width="1.5"/>
+  
+  <!-- Pitch scale in middle -->
+  <line x1="380" y1="175" x2="420" y2="175" stroke="#34d399" stroke-width="1" opacity="0.5"/>
+  <line x1="380" y1="275" x2="420" y2="275" stroke="#34d399" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Forestry waves -->
+  <path d="M 100 320 Q 250 250 400 320 T 700 320" fill="none" stroke="#34d399" stroke-width="1.5" opacity="0.4"/>
+  <path d="M 100 370 Q 250 300 400 370 T 700 370" fill="none" stroke="#34d399" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- Telemetry reading text -->
+  <text x="50" y="80" fill="#34d399" font-family="monospace" font-size="12">ALTITUDE 120M</text>
+  <text x="50" y="110" fill="#34d399" font-family="monospace" font-size="12">GPS LOCK 3D</text>
+  <text x="610" y="80" fill="#34d399" font-family="monospace" font-size="12">SHUTTER 1 50</text>
+</svg>
