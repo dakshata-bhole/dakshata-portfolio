@@ -35,7 +35,7 @@ const EDITS = {
   { category: 'Short Form Content', file: '0301-copy.mp4', thumb: '0301-copy.png' },
   { category: 'Short Form Content', file: '0613 (1).mp4', thumb: '0613 (1).png' },
   { category: 'Short Form Content', file: '1000009718.mp4', thumb: '1000009718.png' },
-  { category: 'Short Form Content', file: '1003 (2).mp4', thumb: '1003 (2).jpeg' },
+  { category: 'Short Form Content', file: '1003 (2).mp4', thumb: '1003 (2).png' },
   { category: 'Short Form Content', file: '1129.mp4', thumb: '1129.png' },
   { category: 'Short Form Content', file: 'New Project 13 [412454A].mp4', thumb: 'New Project 13 [412454A].png' }
   ],
