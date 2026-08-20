@@ -26,18 +26,18 @@ const EDITS = {
     { category: 'Fan Made', file: '0321.mp4', thumb: '0321.jpeg' }
   ],
   fmv: [
-  { category: 'FMV', file: 'Jake-Sully.mp4', thumb: 'Jake-Sully.jpg', square: true },
-  { category: 'FMV', file: 'InShot-20260119-184921967.mp4', thumb: 'InShot-20260119-184921967.jpg', square: true }
+  { category: 'FMV', file: 'Jake-Sully.mp4', thumb: 'Jake-Sully.jpeg', square: true },
+  { category: 'FMV', file: 'InShot-20260119-184921967.mp4', thumb: 'InShot-20260119-184921967.jpeg', square: true }
   ],
   shortform: [
   { category: 'Short Form Content', file: '1000016872.mp4', thumb: '1000016872.png' },
-  { category: 'Short Form Content', file: '0000.mp4', thumb: '0000.jpeg' },
-  { category: 'Short Form Content', file: '0301-copy.mp4', thumb: '0301-copy.jpeg' },
-  { category: 'Short Form Content', file: '0613 (1).mp4', thumb: '0613 (1).jpeg' },
+  { category: 'Short Form Content', file: '0000.mp4', thumb: '0000.png' },
+  { category: 'Short Form Content', file: '0301-copy.mp4', thumb: '0301-copy.png' },
+  { category: 'Short Form Content', file: '0613 (1).mp4', thumb: '0613 (1).png' },
   { category: 'Short Form Content', file: '1000009718.mp4', thumb: '1000009718.png' },
   { category: 'Short Form Content', file: '1003 (2).mp4', thumb: '1003 (2).jpeg' },
-  { category: 'Short Form Content', file: '1129.mp4', thumb: '1129.jpeg' },
-  { category: 'Short Form Content', file: 'New Project 13 [412454A].mp4', thumb: 'New Project 13 [412454A].jpeg' }
+  { category: 'Short Form Content', file: '1129.mp4', thumb: '1129.png' },
+  { category: 'Short Form Content', file: 'New Project 13 [412454A].mp4', thumb: 'New Project 13 [412454A].png' }
   ],
 };
 
