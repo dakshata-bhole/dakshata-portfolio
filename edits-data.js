@@ -14,7 +14,7 @@ const SHOWCASE_META = {
 const EDITS = {
   cinematic: [
     { category: 'Cinematic', file: '01221.mp4', thumb: '01221.jpeg' },
-    { category: 'Cinematic', file: 'InShot-20260202-182701060.mp4', thumb: 'InShot-20260202-182701060.jpeg' },
+    { category: 'Cinematic', file: 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787230763/InShot-20260202-182701060.mp4', thumb: 'InShot-20260202-182701060.jpeg' },
     { category: 'Cinematic', file: 'lv-0-20250517081435.mp4', thumb: 'lv-0-20250517081435.jpeg' }
   ],
   fanmade: [
