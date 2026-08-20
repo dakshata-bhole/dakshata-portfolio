@@ -61,11 +61,11 @@ function getThumbUrl(edit) {
   const bust = `?v=${Date.now()}`;
 
   if (edit.thumb) {
-    return `thumbnails/${encodeURIComponent(edit.category)}/${encodeURIComponent(edit.thumb)}${bust}`;
+    return `images/thumbnails/${encodeURIComponent(edit.category)}/${encodeURIComponent(edit.thumb)}${bust}`;
   }
 
   const base = edit.file.replace(/\.mp4$/i, '');
-  return `thumbnails/${encodeURIComponent(edit.category)}/${encodeURIComponent(`${base}.png`)}${bust}`;
+  return `images/thumbnails/${encodeURIComponent(edit.category)}/${encodeURIComponent(`${base}.png`)}${bust}`;
 }
 
 function createShowcaseCard(edit) {
