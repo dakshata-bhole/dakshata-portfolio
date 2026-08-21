@@ -1,5 +1,10 @@
 const VIDEO_BASE = 'videos/';
 
+
+const VIDEO_URLS = {
+  'Cinematic/01221.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787230763/InShot-20260202-182701060.mp4'
+};
+
 const THUMB_EXTENSIONS = ['png', 'jpeg', 'jfif', 'jpg', 'webp'];
 
 const SHOWCASE_ORDER = ['cinematic', 'fanmade', 'shortform', 'fmv'];
@@ -14,7 +19,7 @@ const SHOWCASE_META = {
 const EDITS = {
   cinematic: [
     { category: 'Cinematic', file: '01221.mp4', thumb: '01221.jpeg' },
-    { category: 'Cinematic', file: 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787230763/InShot-20260202-182701060.mp4', thumb: 'InShot-20260202-182701060.jpeg' },
+    { category: 'Cinematic', file: 'InShot-20260202-182701060.mp4', thumb: 'InShot-20260202-182701060.jpeg' },
     { category: 'Cinematic', file: 'lv-0-20250517081435.mp4', thumb: 'lv-0-20250517081435.jpeg' }
   ],
   fanmade: [
@@ -54,6 +59,12 @@ function formatTitle(filename) {
 }
 
 function getVideoUrl(edit) {
+  const key = `${edit.category}/${edit.file}`;
+
+  if (VIDEO_URLS[key]) {
+    return VIDEO_URLS[key];
+  }
+
   return encodePortoPath(edit.category, edit.file);
 }
 
