@@ -168,17 +168,6 @@
     }, { passive: true });
   }
 
-  /* ── Hero video viewport control ─────────────────────────── */
-  const heroVid = document.getElementById('heroVideo');
-  if (heroVid && 'IntersectionObserver' in window) {
-    const heroObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) heroVid.play().catch(() => {});
-        else heroVid.pause();
-      });
-    }, { threshold: 0.08 });
-    heroObserver.observe(heroVid);
-  }
 
   /* ── Horizontal rails — entire section scrolls on wheel ─── */
   function smoothScrollRail(rail, delta) {
@@ -353,6 +342,8 @@
     document.body.style.overflow = 'hidden';
     setTimeout(() => modalVid.play().catch(() => {}), 150);
   }
+
+  window.openPortfolioVideo = openModal;
 
   function closeModal() {
     if (!modal || !modalVid) return;

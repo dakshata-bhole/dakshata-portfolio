@@ -50,10 +50,10 @@ const EDITS = {
   fanmade: [
     { category: 'Fan Made', file: '1000113885.mp4', thumb: '1000113885.jfif' },
     { category: 'Fan Made', file: '0516-21.mp4', thumb: '0516-21.jfif' },
-    { category: 'Fan Made', file: 'InShot-20260104-013201468.mp4', thumb: 'InShot-20260104-013201468.jfif' },
     { category: 'Fan Made', file: 'lv-0-20240625141252.mp4', thumb: 'lv-0-20240625141252.jfif' },
     { category: 'Fan Made', file: 'lv-0-20240713002647.mp4', thumb: 'lv-0-20240713002647.jfif' },
-    { category: 'Fan Made', file: '0321.mp4', thumb: '0321.jpeg' }
+    { category: 'Fan Made', file: '0321.mp4', thumb: '0321.jpeg' },
+    { category: 'Fan Made', file: 'InShot-20260104-013201468.mp4', thumb: 'InShot-20260104-013201468.jfif' }
   ],
   fmv: [
   { category: 'FMV', file: 'Jake-Sully.mp4', thumb: 'Jake-Sully.jpeg', square: true },
@@ -61,13 +61,13 @@ const EDITS = {
   ],
   shortform: [
   { category: 'Short Form Content', file: '1000016872.mp4', thumb: '1000016872.png' },
-  { category: 'Short Form Content', file: '0000.mp4', thumb: '0000.png' },
-  { category: 'Short Form Content', file: '0301-copy.mp4', thumb: '0301-copy.png' },
   { category: 'Short Form Content', file: '0613 (1).mp4', thumb: '0613 (1).png' },
+  { category: 'Short Form Content', file: '0301-copy.mp4', thumb: '0301-copy.png' },
+  { category: 'Short Form Content', file: 'New Project 13 [412454A].mp4', thumb: 'New Project 13 [412454A].png' },
   { category: 'Short Form Content', file: '1000009718.mp4', thumb: '1000009718.png' },
+  { category: 'Short Form Content', file: '0000.mp4', thumb: '0000.png' },
   { category: 'Short Form Content', file: '1003 (2).mp4', thumb: '1003 (2).png' },
-  { category: 'Short Form Content', file: '1129.mp4', thumb: '1129.png' },
-  { category: 'Short Form Content', file: 'New Project 13 [412454A].mp4', thumb: 'New Project 13 [412454A].png' }
+  { category: 'Short Form Content', file: '1129.mp4', thumb: '1129.png' }
   ],
 };
 
@@ -135,3 +135,9 @@ function renderShowcases() {
     });
   });
 }
+
+window.PortfolioMedia = {
+  edits: SHOWCASE_ORDER.flatMap((key) => EDITS[key] || []),
+  getVideoUrl,
+  formatTitle
+};
