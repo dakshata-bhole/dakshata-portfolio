@@ -2,31 +2,31 @@ const VIDEO_BASE = 'videos/';
 
 const VIDEO_URLS = {
   // CINEMATIC
-  'Cinematic/01221.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787230742/01221.mp4',
-  'Cinematic/InShot-20260202-182701060.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787230763/InShot-20260202-182701060.mp4',
-  'Cinematic/lv-0-20250517081435.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787230686/lv-0-20250517081435.mp4',
+  'Cinematic/01221.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787230742/01221.mp4',
+  'Cinematic/InShot-20260202-182701060.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787230763/InShot-20260202-182701060.mp4',
+  'Cinematic/lv-0-20250517081435.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787230686/lv-0-20250517081435.mp4',
 
   // FAN MADE
-  'Fan Made/1000113885.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311336/1000113885.mp4',
-  'Fan Made/0516-21.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311338/0516-21.mp4',
-  'Fan Made/InShot-20260104-013201468.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311336/InShot-20260104-013201468.mp4',
-  'Fan Made/lv-0-20240625141252.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311335/lv-0-20240625141252.mp4',
-  'Fan Made/lv-0-20240713002647.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311337/lv-0-20240713002647.mp4',
-  'Fan Made/0321.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311347/0321.mp4',
+  'Fan Made/1000113885.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311336/1000113885.mp4',
+  'Fan Made/0516-21.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311338/0516-21.mp4',
+  'Fan Made/InShot-20260104-013201468.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311336/InShot-20260104-013201468.mp4',
+  'Fan Made/lv-0-20240625141252.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311335/lv-0-20240625141252.mp4',
+  'Fan Made/lv-0-20240713002647.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311337/lv-0-20240713002647.mp4',
+  'Fan Made/0321.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311347/0321.mp4',
 
   // FMV
-  'FMV/Jake-Sully.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311458/Jake-Sully.mp4',
-  'FMV/InShot-20260119-184921967.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311456/InShot-20260119-184921967.mp4',
+  'FMV/Jake-Sully.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311458/Jake-Sully.mp4',
+  'FMV/InShot-20260119-184921967.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311456/InShot-20260119-184921967.mp4',
 
   // SHORT FORM CONTENT
-  'Short Form Content/1000016872.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311588/1000016872.mp4',
-  'Short Form Content/0000.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311519/0000.mp4',
-  'Short Form Content/0301-copy.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311573/0301-copy.mp4',
-  'Short Form Content/0613 (1).mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311792/0613_1.mp4',
-  'Short Form Content/1000009718.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311600/1000009718.mp4',
-  'Short Form Content/1003 (2).mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311592/1003_2.mp4',
-  'Short Form Content/1129.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311597/1129.mp4',
-  'Short Form Content/New Project 13 [412454A].mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/v1787311565/New_Project_13_412454A.mp4'
+  'Short Form Content/1000016872.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311588/1000016872.mp4',
+  'Short Form Content/0000.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311519/0000.mp4',
+  'Short Form Content/0301-copy.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311573/0301-copy.mp4',
+  'Short Form Content/0613 (1).mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311792/0613_1.mp4',
+  'Short Form Content/1000009718.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311600/1000009718.mp4',
+  'Short Form Content/1003 (2).mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311592/1003_2.mp4',
+  'Short Form Content/1129.mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311597/1129.mp4',
+  'Short Form Content/New Project 13 [412454A].mp4': 'https://res.cloudinary.com/ujuoz0pu/video/upload/q_auto,f_auto,w_1920/v1787311565/New_Project_13_412454A.mp4'
 };
 
 
